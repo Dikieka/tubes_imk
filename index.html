@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Desa Boyolangu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-landmark me-2"></i>
+                SISTEM INFORMASI <br>
+                DESA BOYOLANGU
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil Desa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kegiatan">Kegiatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aspirasi">Aspirasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero fade-in-up">
+        <div class="container">
+            <div class="hero-content">
+                <h1>DESA BOYOLANGU</h1>
+                <p>Bersatu Untuk Maju Bersama Membangun Masa Depan</p>
+                <a href="#profil" class="btn btn-primary btn-lg">
+                    Jelajahi Desa Kami
+                    <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profil" class="section profile-section">
+        <div class="container">
+            <h2 class="section-title">Selamat Datang di Desa Boyolangu</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="profile-text">
+                        <p>Kami senantiasa berusaha memberikan pelayanan administrasi pemerintahan dengan mengedepankan prinsip kepuasan masyarakat adalah kebahagiaan kami.</p>
+                        
+                        <p>Website Sistem Informasi Desa Boyolangu ini dibuat untuk memberikan transparansi dan kemudahan akses informasi terkait profil, layanan, dan kegiatan Desa Boyolangu, Kabupaten Tulungagung.</p>
+                        
+                        <p>Sesuai dengan amanah undang-undang, kami berkomitmen memberikan pelayanan yang bersih, transparan, dan profesional tanpa memungut biaya tidak resmi dalam bentuk apapun.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.0558315802566!2d111.8938839005773!3d-8.118759975146764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e22f67f28341%3A0xd703591252c8bd0f!2sBalai%20Desa%20Boyolangu!5e0!3m2!1sid!2sid!4v1747536989536!5m2!1sid!2sid"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Data Statistik Desa</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">3.500</div>
+                        <div class="stat-label">Jumlah Penduduk</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">850</div>
+                        <div class="stat-label">Kartu Keluarga</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Dusun</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="section" style="background: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">Layanan Desa</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalKTP">
+                        <i class="fas fa-id-card service-icon"></i>
+                        <p class="service-title">KTP</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalPPAT">
+                        <i class="fas fa-file-signature service-icon"></i>
+                        <p class="service-title">PPAT</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalSKCK">
+                        <i class="fas fa-user-shield service-icon"></i>
+                        <p class="service-title">SKCK</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalWarisan">
+                        <i class="fas fa-scroll service-icon"></i>
+                        <p class="service-title">Warisan</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalLegalisasi">
+                        <i class="fas fa-stamp service-icon"></i>
+                        <p class="service-title">Legalisasi</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalSKTM">
+                        <i class="fas fa-user-plus service-icon"></i>
+                        <p class="service-title">SKTM</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalIMB">
+                        <i class="fas fa-building service-icon"></i>
+                        <p class="service-title">IMB</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalKeramaian">
+                        <i class="fas fa-music service-icon"></i>
+                        <p class="service-title">Izin Keramaian</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalPenelitian">
+                        <i class="fas fa-search service-icon"></i>
+                        <p class="service-title">Penelitian</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="service-card" data-bs-toggle="modal" data-bs-target="#modalNikah">
+                        <i class="fas fa-heart service-icon"></i>
+                        <p class="service-title">Dispensasi Nikah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Calendar -->
+    <section id="kegiatan" class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Kalender Kegiatan Desa</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="event-card">
+                        <div class="d-flex align-items-center">
+                            <div class="event-date">
+                                <div class="event-day">28</div>
+                                <div class="event-month">Mei</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="event-title">Gotong Royong Bersih Desa</h6>
+                                <p class="event-description">Kegiatan membersihkan lingkungan desa bersama seluruh warga masyarakat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="d-flex align-items-center">
+                            <div class="event-date">
+                                <div class="event-day">10</div>
+                                <div class="event-month">Jun</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="event-title">Pelatihan UMKM</h6>
+                                <p class="event-description">Pelatihan kewirausahaan dan pengembangan UMKM untuk warga desa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="d-flex align-items-center">
+                            <div class="event-date">
+                                <div class="event-day">15</div>
+                                <div class="event-month">Jul</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="event-title">Rapat Koordinasi Pelayanan Publik</h6>
+                                <p class="event-description">Evaluasi dan pengoptimalan pelayanan publik yang lebih efektif.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- news sectio -->
+        <div class="container py-4">
+      <h2 class="section-title">Berita Terkini</h2>
+      <div id="news-container" class="row"></div>
+    </div>
+
+
+ <!-- Aspirasi Section -->
+ <section id="aspirasi" class="section" style="background: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">Kirim Aspirasi Anda</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="formAspirasi" class="aspirasi-form">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan/Aspirasi</label>
+                            <textarea class="form-control" id="pesan" rows="5" required placeholder="Tuliskan aspirasi, saran, atau keluhan Anda..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100" id="submitBtn" disabled>
+                            <i class="fab fa-whatsapp me-2"></i>
+                            Kirim via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h6>Alamat Kantor</h6>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Jl. Raya No. 122<br>
+                        Boyolangu, Kabupaten Tulungagung<br>
+                        Jawa Timur, Indonesia
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6>Kontak Kami</h6>
+                    <p>
+                        <i class="fas fa-phone me-2"></i>
+                        080-3486-7200<br>
+                        <i class="fas fa-envelope me-2"></i>
+                        desaboyolangu@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6>Jam Operasional</h6>
+                    <p>
+                        <i class="fas fa-clock me-2"></i>
+                        Senin - Jumat<br>
+                        08:00 - 15:00 WIB
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: #374151; margin: 2rem 0 1rem;">
+            <div class="text-center">
+                <p style="margin: 0; color: #9ca3af;">
+                    &copy; 2024 Desa Boyolangu. Semua hak dilindungi undang-undang.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modals -->
+    <!-- Modal KTP -->
+    <div class="modal fade" id="modalKTP" tabindex="-1" aria-labelledby="modalKTPLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Persyaratan KTP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Fotokopi Kartu Keluarga (KK)</li>
+                        <li>Surat pengantar dari RT/RW</li>
+                        <li>Formulir permohonan dari kelurahan</li>
+                        <li>Pas foto ukuran 3x4 sebanyak 2 lembar</li>
+                        <li>Akta kelahiran (untuk pembuatan KTP pertama)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal PPAT -->
+<div class="modal fade" id="modalPPAT" tabindex="-1" aria-labelledby="modalPPATLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan PPAT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK para pihak</li>
+                    <li>Sertifikat tanah asli</li>
+                    <li>Surat keterangan dari kelurahan</li>
+                    <li>PBB tahun terakhir</li>
+                    <li>Surat pernyataan tidak sengketa</li>
+                    <li>Surat keterangan waris (jika diperlukan)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal SKCK -->
+<div class="modal fade" id="modalSKCK" tabindex="-1" aria-labelledby="modalSKCKLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan SKCK</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK</li>
+                    <li>Pas foto ukuran 4x6 sebanyak 6 lembar</li>
+                    <li>Fotokopi akta kelahiran/ijazah</li>
+                    <li>Surat pengantar dari RT/RW</li>
+                    <li>Surat pengantar dari kelurahan</li>
+                    <li>Formulir permohonan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Warisan -->
+<div class="modal fade" id="modalWarisan" tabindex="-1" aria-labelledby="modalWarisanLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan Surat Warisan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK ahli waris</li>
+                    <li>Surat kematian pewaris</li>
+                    <li>Fotokopi akta kelahiran ahli waris</li>
+                    <li>Fotokopi akta nikah pewaris</li>
+                    <li>Surat pernyataan ahli waris</li>
+                    <li>Surat pengantar dari RT/RW</li>
+                    <li>Materai 10.000</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Legalisasi -->
+<div class="modal fade" id="modalLegalisasi" tabindex="-1" aria-labelledby="modalLegalisasiLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan Legalisasi Dokumen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Dokumen asli yang akan dilegalisasi</li>
+                    <li>Fotokopi dokumen yang akan dilegalisasi</li>
+                    <li>Fotokopi KTP pemohon</li>
+                    <li>Surat pengantar dari instansi terkait (jika diperlukan)</li>
+                    <li>Materai sesuai ketentuan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal SKTM -->
+<div class="modal fade" id="modalSKTM" tabindex="-1" aria-labelledby="modalSKTMLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan SKTM</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK</li>
+                    <li>Surat pengantar dari RT/RW</li>
+                    <li>Formulir permohonan</li>
+                    <li>Surat pernyataan tidak mampu</li>
+                    <li>Pas foto ukuran 3x4 sebanyak 2 lembar</li>
+                    <li>Materai 10.000</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal IMB -->
+<div class="modal fade" id="modalIMB" tabindex="-1" aria-labelledby="modalIMBLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan IMB</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK pemohon</li>
+                    <li>Fotokopi sertifikat tanah</li>
+                    <li>Fotokopi PBB tahun terakhir</li>
+                    <li>Gambar rencana bangunan (site plan)</li>
+                    <li>Surat pernyataan kesanggupan</li>
+                    <li>Surat rekomendasi dari kelurahan</li>
+                    <li>Formulir permohonan IMB</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Izin Keramaian -->
+<div class="modal fade" id="modalKeramaian" tabindex="-1" aria-labelledby="modalKeramaianLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan Izin Keramaian</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK penyelenggara</li>
+                    <li>Surat permohonan izin keramaian</li>
+                    <li>Proposal kegiatan</li>
+                    <li>Denah lokasi kegiatan</li>
+                    <li>Surat pernyataan bertanggung jawab</li>
+                    <li>Rekomendasi dari RT/RW</li>
+                    <li>Surat keterangan dari kepolisian (jika diperlukan)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Penelitian -->
+<div class="modal fade" id="modalPenelitian" tabindex="-1" aria-labelledby="modalPenelitianLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan Izin Penelitian</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP peneliti</li>
+                    <li>Surat pengantar dari institusi/universitas</li>
+                    <li>Proposal penelitian</li>
+                    <li>Surat permohonan izin penelitian</li>
+                    <li>Fotokopi kartu mahasiswa (untuk mahasiswa)</li>
+                    <li>Surat keterangan bebas narkoba</li>
+                    <li>Pas foto ukuran 3x4 sebanyak 2 lembar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Dispensasi Nikah -->
+<div class="modal fade" id="modalNikah" tabindex="-1" aria-labelledby="modalNikahLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Persyaratan Dispensasi Nikah</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Fotokopi KTP dan KK calon pengantin</li>
+                    <li>Fotokopi akta kelahiran calon pengantin</li>
+                    <li>Surat keterangan belum menikah</li>
+                    <li>Surat permohonan dispensasi nikah</li>
+                    <li>Surat persetujuan orang tua/wali</li>
+                    <li>Surat keterangan sehat</li>
+                    <li>Pas foto calon pengantin ukuran 4x6</li>
+                    <li>Materai 10.000</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LfOI1UrAAAAABnXWA4OSzraHiYzcyqi1pTonL4J"></script>
+<script src="assets/script.js"></script>
+
+<script>
+  // Script untuk menangani modal layanan desa
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Inisialisasi semua modal Bootstrap
+    const modalElements = document.querySelectorAll('.modal');
+    const modals = {};
+    
+    modalElements.forEach(modalElement => {
+        const modalId = modalElement.id;
+        modals[modalId] = new bootstrap.Modal(modalElement);
+    });
+
+    // Event listener untuk service cards
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    serviceCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const targetModal = this.getAttribute('data-bs-target');
+            const modalId = targetModal.replace('#', '');
+            
+            // Tampilkan modal yang sesuai
+            if (modals[modalId]) {
+                modals[modalId].show();
+            }
+        });
+        
+        // Tambahkan efek hover
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
+            this.style.transition = 'all 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        });
+    });
+
+    // Event listener untuk tombol close modal
+    const closeButtons = document.querySelectorAll('[data-bs-dismiss="modal"]');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            const modalId = modal.id;
+            if (modals[modalId]) {
+                modals[modalId].hide();
+            }
+        });
+    });
+
+    // Tutup modal ketika klik di luar modal
+    modalElements.forEach(modalElement => {
+        modalElement.addEventListener('click', function(event) {
+            if (event.target === this) {
+                const modalId = this.id;
+                if (modals[modalId]) {
+                    modals[modalId].hide();
+                }
+            }
+        });
+    });
+});
+
+// Fungsi untuk membuka modal secara manual (opsional)
+function openModal(modalId) {
+    const modal = new bootstrap.Modal(document.getElementById(modalId));
+    modal.show();
+}
+
+// Fungsi untuk menutup modal secara manual (opsional)
+function closeModal(modalId) {
+    const modal = bootstrap.Modal.getInstance(document.getElementById(modalId));
+    if (modal) {
+        modal.hide();
+    }
+}
+</script>
+</body>
+</html>
